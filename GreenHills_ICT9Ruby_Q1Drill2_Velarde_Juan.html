@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Music Recommendation</title>
+
+
+
+  <style>
+    body {
+      background-image: url(https://cdn.wallpapersafari.com/73/36/kjoK1u.png);
+      background-position: center;
+      background-size: cover;
+      /*background-color: #f5f8fa;*/
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; 
+    }
+
+    .form-card {
+      background-image:url(https://static.vecteezy.com/system/resources/thumbnails/011/815/936/small/modern-green-blur-gradient-background-free-vector.jpg);
+      background-size: cover;
+      padding: 2rem 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .form-card h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 0.3rem;
+      font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+      width: 95%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: border 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus,
+    select:focus {
+      border-color: #007BFF;
+      outline: none;
+    }
+
+    textarea {
+      height: 80px;
+      resize: vertical;
+    }
+
+    .genre-options,
+    .rating-options {
+      margin-top: 0.5rem;
+    }
+
+    .genre-options label,
+    .rating-options label {
+      margin-right: 1rem;
+      font-weight: normal;
+    }
+
+    .submit-btn {
+      margin-top: 2rem;
+      width: 95 %;
+      background-color: #474747;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #0056cc;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="form-card">
+      <h2> Music Recommendation</h2>
+
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" placeholder="Miguel Velarde">
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" placeholder="miguelvelarde@gmail.com">
+
+      <label for="title">Recommended Music Title:</label>
+      <input type="text" id="title" placeholder="Enter music title">
+
+      <label for="reason">Why do you recommend it?</label>
+      <textarea id="reason" placeholder="feedback here..."></textarea>
+
+      <label>Genres (select all that apply):</label>
+
+      <div class="genre-options">
+        <label><input type="checkbox"> Pop Music</label>
+        <label><input type="checkbox"> Kpop</label>
+        <label><input type="checkbox"> Jazz</label>
+        <label><input type="checkbox"> Rock</label>
+        <label><input type="checkbox"> Classical</label>
+      </div>
+
+      <label>Rate the Music:</label>
+      <div class="rating-options">
+        <label><input type="radio" name="rating"> 1</label>
+        <label><input type="radio" name="rating"> 2</label>
+        <label><input type="radio" name="rating"> 3</label>
+        <label><input type="radio" name="rating"> 4</label>
+        <label><input type="radio" name="rating"> 5 (Best)</label>
+      </div>
+
+    
+      <label for="platform">Where did you hear it?</label>
+        <select id="platform">
+          <option>-- Select Platform --</option>
+          <option>Spotify</option>
+          <option>YouTube</option>
+          <option>Apple Music</option>
+          <option>Radio</option>
+          <option>Other</option>
+        </select>
+
+      <button type="submit" class="submit-btn">Submit Recommendation</button>
+    </form>
+  </div>
+
+</body>
+</html>
